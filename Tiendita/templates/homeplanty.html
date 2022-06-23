@@ -1,0 +1,599 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tierra, manos y corazones</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/planty.png'%}" rel="icon">
+ 
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <linnk href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+ 
+  
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/lista_productos.css'%}" rel="stylesheet">
+  <link href="{%static 'css/style.css'%}" type="text/css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Delicious - v4.7.1
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>+569 666 666</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Lunes-Sab: 10:00 AM - 19:00 PM
+      </span></i>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="{% url 'homeplanty' %}">Planty!</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">¿Quiénes somos?</a></li>
+          <li><a class="nav-link scrollto" href="#about">Labor</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Vitrina</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Ofertas especiales!</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Donaciones</a></li>      
+          <li><a class="nav-link scrollto" href="#contact">Contactanos </a></li>
+          <li><a class="nav-link scrollto" href="carritoCompra.html">Micompra <i class="bi bi-cart4"></i>
+          </a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#book-a-table" class="book-a-table-btn scrollto">Suscribete!</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({% static 'img/planta slide.png' %})">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Planty</span> Para todos!</h2>
+                <p class="animate__animated animate__fadeInUp">Somos unas manos tecnológicas con ese olorsito a tierra que tanto gusta
+
+                </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Revisa nuestra vitrina</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Suscribete con una donación</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'img/planta slide_2.png' %});">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Una tienda de jardinería</h2>
+                <p class="animate__animated animate__fadeInUp">Vendemos los artículos necesarios para que puedas hacer
+                  crecer tu propio jardin. Desde la tierra hasta los maceteros!
+                </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Revisa nuestra vitrina</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Suscribete con una donación</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'img/planta slide_3.png' %});">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"> Un proyecto verde</h2>
+                <p class="animate__animated animate__fadeInUp"><strong>Sin fines de lucro</strong></p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Revisa nuestra vitrina</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Suscribete con una donación</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box">
+           <video width="640" autoplay loop>
+             <source src="{% static 'img/video1.mp4' %}" type="video/mp4">
+           </video>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Nuestra misión <strong>es tener las manos con tierra... ¡para poder sonreir! </strong></h3>
+            
+              <p class="text-center fst-italic">
+                De pronto, por estar tan absortos ante tanta destrucción, nos quedamos impávidos. Volvamos a mirar
+                abajo, donde estan nuestros pies, <strong>en la tierra que nos sostiene... </strong>y no solo fisicamente. Ante esto, 
+                nuestra principal misión es <strong>resguardar lo que nos va quedando</strong> y <strong>germinar la siguiente semilla</strong> que 
+                podrá convertirse en algún bosque grande y verde. Luego, un gran <strong>ecosistema.</strong>
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Sin fines de lucro</li>
+                <li><i class="bx bx-check-double"></i> Suscripción voluntaria</li>
+                <li><i class="bx bx-check-double"></i> Germina tu voluntad</li>
+              </ul>
+              <p class="text-center fst-italic">
+                <storng>Se parte de esta misión con nosotros</storng>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Elige <span>tu donación</span></h2>
+          <p>Estaremos muy agradecidos con cualquiera donación que elijas <strong>&#128513</strong></p>
+          <p class="text-center fst-italic">Al hacer click en <strong>donar</strong> estaras siendo redirigido hacia tu plataforma de pago automáticamente.
+          Puedes hacerlo cada vez que quieras.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>2.500$</span>
+              <h4>Ulmo</h4>
+              <p class="text-center">Árbol perenne que puede alcanzar hasta 40 metros de altura
+                 La corteza es de color gris pardo con fisuras longitudinales. El ulmo florece entre los meses de enero y febrero,
+                  y sus flores de color blanco hacen pensar en árboles cubiertos de nieve. 
+                 Su corteza, rica en taninos, es muy utilizada en curtiembres.</p>
+                 <br>
+                 <br>
+                 <br>
+               
+             
+                 <button type="button" class="btn btn-info">Donar</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>5.000$</span>
+              <h4>Copihue</h4>
+              <p class="text-center">El copihue es la flor nacional de Chile. Es una enredadera que puede alcanzar una longitud de hasta 4 metros.
+                  Las flores aparecen entre marzo y mayo 
+                   Produce un fruto comestible, una baya de sabor dulce que contiene muchas semillas.
+                 Su raíz es usada en la medicina popular contra enfermedades venéreas, gota y reumatismo.</p>
+                 <br>
+                 <br>
+                 <button type="button" class="btn btn-info">Donar</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>10.000</span>
+              <h4> Araucaria</h4>
+              <p class="text-center"> Es un árbol de lento crecimiento, que alcanza hasta 50 metros de altura. Su tronco es recto, cilíndrico y muy grueso, de 3 o más metros de diámetro. 
+                La ramificación comienza a varios metros del suelo.
+                 Las hojas son muy duras y poseen un mucrón o espina en la punta.
+                 La madera es muy cotizada y se caracteriza por ser compacta, liviana y de color blanco amarillento.</p>
+                 <br>
+             
+                 <button type="button" class="btn btn-info">Donar</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Whu Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Vitrinea <span>con nosotros</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Mostrar todo</li>
+              <li data-filter=".filter-tierra">Tierra abonos y fertilizantes</li>
+              <li data-filter=".filter-maceteros">Maceteros y utensilios</li>
+              <li data-filter=".filter-plantas">Plantas y semillas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-tierra">
+            <div class="menu-content">
+              <a href="">Tierra de hoja</a><span>$3.800</span>
+            </div>
+            <div class="menu-ingredients">
+              <strong>Tierra con abono natural para uso en todo jardin. 40 lts (aprox 20kg)</strong>   
+            </div>
+          </div>
+          
+
+          <div class="col-lg-6 menu-item filter-maceteros">
+            <div class="menu-content">
+              <a href="#">Macetero Reyplast</a><span>$2500</span>
+            </div>
+            <div class="menu-ingredients">
+              <strong>Hecho de plástico reforzado. Capacidad 11lts (24.4x23x24.4)cms</strong> 
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-plantas">
+            <div class="menu-content">
+              <a href="#">Corona del Inca</a><span>$5.500</span>
+            </div>
+            <div class="menu-ingredients">
+              Planta de interior con hojas carmesí. Altura de 32 cms aprox luego de 2 años.
+            </div>
+          </div>     
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Estas son nuestras <span>ofertas especiales</span></h2>
+          <p>Porqué queremos difundir el ejercicio de plantar. Cada semana ofertas nuevas.
+              <p class="tex-center fst-italic">Haz click en añadir para agregarlo a tu carrito de compra </p>&#128513;
+              <br>
+              <a href="{% url 'listaproductos' %}">Vitrinea mas aqui</a>
+            <br>
+          </p>
+        </div>
+
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="{%static 'img/macetero.jfif' %}" width="200" height="350" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Macetero Regyplast</h5>
+              <p class="card-text">
+                 <br>Macetero plástico
+                 <br>Para exterior o interior
+                 <br>Capacidad de 11 lts
+                
+                </p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-info">Añadir</button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top " src="{% static 'img/macetero_deco.jfif' %}" width="200" height="350" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Macetero Decoeco</h5>
+              <p class="card-text">
+                  <br>Macetero cerámico
+                  <br>Para interior
+                  <br>Capacidad de 5 lts
+              </p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-info">Añadir</button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/tierra_hoja.jpg' %}" width="200" height="350" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Anasac</h5>
+              <p class="card-text">
+                <br>Tierra de hoja 
+                <br>Sustrato residual
+                <br>40 lts
+              </p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-info">Añadir</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+     
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Mi compra - carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El producto se ha agregado correctamente &#128513
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Seguir vitrineando</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+       
+
+              
+  
+    </section><!-- End Specials Section -->
+
+    
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Suscribete <span>aquí por $2.000 al mes</span></h2>
+          <p class="text-center fst-italic">Las personas sujetas a suscripciones tienen derecho a semillas gratis.
+            Al momento de suscribirte elije las tuyas.</p>&#128513;
+        </div>
+
+        <!-- Material form login -->
+<div class="card">
+
+  
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0 p-md-5">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;">
+
+      <!-- Email -->
+      <div class="md-form p-5">
+        <input type="email" id="materialLoginFormEmail" class="form-control">
+        <label for="materialLoginFormEmail">E-mail</label>
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+        <input type="password" id="materialLoginFormPassword" class="form-control">
+        <label for="materialLoginFormPassword">Contraseña</label>
+      </div>
+
+      <div class="d-flex justify-content-around">
+        <div>
+          <!-- Remember me -->
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+            <label class="form-check-label" for="materialLoginFormRemember">Recordarme</label>
+          </div>
+        </div>
+        <div>
+          <!-- Forgot password -->
+          <a href="">Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+
+      <!-- Sign in button -->
+      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Entra</button>
+
+      <!-- Register -->
+      <p>Aún no eres miembro?
+        <a href="{% url 'formulario' %}">Registrate ahora!</a>
+      </p>
+    </form>
+    <!-- Form -->
+
+  </div>
+
+</div>
+<!-- Material form login -->
+
+        
+       
+    
+    <!-- End Book A Table Section -->
+
+   
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contacta</span> nos</h2>
+          <p>Estamos a un click de distancia &#128513</p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.962496014217!2d-70.62675945575788!3d-33.426625319951135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1648959254758!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Lugar:</h4>
+              <p>Providencia<br>Salvador, 225</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Apertura:</h4>
+              <p>Lunes-viernes:<br>11:00 AM - 19:00 PM</p>
+              <p>Sábado:<br>11:00 AM - 16:00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>contacto.planty@gmail.com<br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>WhatsApp:</h4>
+              <p>+569 666 666<br>+569 777 777</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Propósito" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Tu mensaje ha sido enviado!</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </form>
+
+        <!-- POKEMON API-->
+        
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Planty</h3>
+      <p>Por un mundo con tierra en las manos y semillas en el corazon</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Planty</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+       
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script> 
+
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>  
+
+
+
+  <!-- Template Main JS File -->
+  <script src="{%static 'js/main.j' %}"></script>
+ 
+ 
+
+</body>
+
+</html>
